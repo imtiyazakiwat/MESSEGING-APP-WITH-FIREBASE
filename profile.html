@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chat Application - Profile</title>
+  <link rel="stylesheet" type="text/css" href="profile.css">
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+</head>
+<body>
+  <div class="container">
+    <h1>Profile</h1>
+    <form id="profileForm">
+      <input type="file" id="profilePicture" accept="image/*">
+      <input type="text" id="username" placeholder="Username" required>
+      <textarea id="bio" placeholder="Bio"></textarea>
+      <button type="submit">Save</button>
+    </form>
+  </div>
+
+  <script src="firebase.js"></script>
+  <script src="profile.js"></script>
+</body>
+</html>

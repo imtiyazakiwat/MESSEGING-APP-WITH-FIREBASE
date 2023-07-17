@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chat Application - Chat Room</title>
+  <link rel="stylesheet" type="text/css" href="chatroom.css">
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+</head>
+<body>
+    <div class="container">
+      <h1>Chat Room</h1>
+      <div id="chatMessages"></div>
+      <form id="messageForm">
+        <input type="text" id="messageInput" placeholder="Type your message..." required>
+        <button type="submit">Send</button>
+      </form>
+      <div class="user-profile">
+        <img id="profilePicture" src="" alt="Profile Picture">
+        <span id="username"></span>
+        <a href="profile.html">Edit Your Profile</a>
+      </div>
+    </div>
+  
+    <script src="firebase.js"></script>
+    <script src="chatroom.js"></script>
+  </body>
+</html>
